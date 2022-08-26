@@ -67,6 +67,7 @@ USE_I18N = True
 USE_TZ = True
 STATIC_URL = 'static/'
 MEDIA_ROOT = BASE_DIR / 'media'
+MEDIA_URL = "/users/images/"
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 # CORS 
 CORS_ORIGIN_ALLOW_ALL = False

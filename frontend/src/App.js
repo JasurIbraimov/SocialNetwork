@@ -1,8 +1,10 @@
 import Profile from "./components/Profile/Profile";
+import AppNav from "./components/AppNav/AppNav";
 function App() {
   return (
     <div className="App">
-      <Profile id="2"/>
+      <AppNav />
+      <Profile id="4"/>
     </div>
   );
 }

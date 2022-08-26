@@ -7,9 +7,10 @@ class Profile(models.Model):
     about = models.TextField(null=True, blank=True, max_length=500)
     website_url = models.URLField(null=True, blank=True, max_length=500)
     github_url = models.URLField(null=True, blank=True, max_length=500)
-    avatar = models.ImageField(null=True, blank=True, default="users/no-image.png", upload_to="users/")
+    avatar = models.ImageField( default="no-image.png", blank=True, null=True, upload_to="users/")
     joined_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
+
 
     def __str__(self):
         return f"{self.user.first_name} {self.user.last_name}"
